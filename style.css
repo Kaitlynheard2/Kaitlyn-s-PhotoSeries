@@ -1,0 +1,74 @@
+/* sets type for entire page */
+  @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+/* applies to everything */
+*{
+  font-family: 'Abril Fatface';
+  box-sizing: border-box;
+}
+/* applies to body */
+body,html{
+  margin:0px;
+  padding:0px;
+}
+
+/* turns backgorund purple */
+.subcontainer, .conclusion{
+  background-color: #c8a2c8
+}
+
+/* header 1 settings */
+h1{
+  font-size: 20vmin;
+  font-weight: bold;
+  color: white;
+  margin:0px;
+}
+
+/* header 1 and conclusion settings */
+h1,.conclusion{
+font-style: italic;
+}
+
+/* header 2 and conclusion fontsize */
+h2, .conclusion{
+  font-size:14vmin;
+}
+
+/* this is suppossed to make the image turn pink with hiver, but its not working */
+.photo img:hover{
+  color: #FF1493
+}
+
+/* sets up images */
+.photos img{
+ display: flex;
+ width: 100vmin;
+ height: 400px;
+ object-fit: cover;
+ flex-direction: row;
+ flex-wrap: wrap;
+ /* align-content: space-between; */
+ /* justify-content: center; */
+ /* flex-direction: column; */
+ margin-top: 50px;
+ margin-bottom:50px;
+ /* align-content: space-around; */
+}
+
+/* settings for paragraph text */
+.description{
+text-align:justify;
+font-size:8vmin;
+}
+
+/* sets up size for ending */
+.ending{
+font-size: 5vmin;;
+}
+
+/* sets flex box for page */
+.ending,.conclusion,h1,h2{
+  display: flex;
+  justify-content:flex-end;
+}
